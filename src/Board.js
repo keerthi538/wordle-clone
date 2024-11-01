@@ -90,7 +90,7 @@ const Board = () => {
     window.addEventListener("keydown", handleKeyPress);
 
     return () => window.removeEventListener("keydown", handleKeyPress);
-  }, [currentGuess, isGameOver, solution]);
+  }, [currentGuess, isGameOver, solution, board]);
 
   return (
     <div className="board">
